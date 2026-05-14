@@ -1,9 +1,13 @@
 #linear search example 
 numbers = [10 , 20 , 30, 40 , 50]
-target = 30 
-
+target = int(input("Enter number to search: ")) 
+                   
 found = False 
+
+
 for i in range(len(numbers)):
+    print(f"Cgecking index{i}...")
+
 
     if numbers[i] == target:
         print(f"Element fount at index{i}")
@@ -21,6 +25,3 @@ range(len(numbers))
 if numbers[i] == target:
     print(f"Element found at index {i}")
 
-    break
-if not found: #eğer bulunamadıysa
-    
